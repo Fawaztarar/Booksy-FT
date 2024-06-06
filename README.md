@@ -1,7 +1,7 @@
 
 ## Booksy - Online Book Store
 
-Welcome to Booksy, your go-to online bookstore built using the MERN stack  with user authentication handled by Clerk and payments processed by Stripe.. Booksy offers a vast collection of books across various genres, providing book lovers with an intuitive platform to explore, select, and purchase their favorite reads with ease. Whether you're into fiction, non-fiction, educational materials, or rare finds, Booksy is designed to cater to your reading preferences.
+Welcome to Booksy, your go-to online bookstore built using the MERN stack  with user authentication handled by Clerk and payments processed by Stripe. Booksy offers a vast collection of books across various genres, providing book lovers with an intuitive platform to explore, select, and purchase their favorite reads with ease. Whether you're into fiction, non-fiction, educational materials, or rare finds, Booksy is designed to cater to your reading preferences.
 
 ## Features
 
@@ -62,36 +62,16 @@ MongoDB
 ## Installation
 
 ### Backend Setup
-
-1. Clone the backend repository:
-
-git clone https://github.com/AVJehoshua/Booksy-backend.git
-
-Clone the repository or download the source code:
+git clone https://github.com/Fawaztarar/booksy-FT
+cd Booksy-backend
+npm install
+npm start
 
 ### Frontend Setup
-
-2. Clone the backend repository:
-
 git clone https://github.com/TomMazzag/Booksy-frontend.git
-
-
-
-Navigate to the project directory:
-
 cd Booksy-frontend
-- npm install
-- install dependencies
-- Start the React development server:
-
-Install the required dependencies for the backend:
-
-cd Booksy-backend
-- Start the backend server:
-- npm start
-- The application should now be running on http://localhost:3000.
-
-Start the backend server:
+npm install
+npm start
 
 
 ## Configuration
@@ -103,6 +83,10 @@ MONGO_URI: Connection string for your MongoDB database.
 STRIPE_SECRET_KEY: Secret key for Stripe payment integration.
 Stripe Integration
 Ensure you have set up your Stripe account and obtained the necessary API keys for payment processing.
+
+### Running the Application
+
+The application should now be running on `http://localhost:3000`. Ensure both the backend and frontend servers are running simultaneously for the application to function correctly.
 
 ## Usage
 
