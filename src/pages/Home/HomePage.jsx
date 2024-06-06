@@ -78,7 +78,7 @@ export const HomePage = () => {
                     {categoryBooks.map((categorybook) => (
                         <BookCard key={categorybook._id} book={categorybook} />
                     ))}
-                <p className="show-more-button" onClick={showNextSixBooks}>></p>
+                <p className="show-more-button" onClick={showNextSixBooks}></p>
                 </div>
             </div>
             <div className="title">
@@ -114,6 +114,5 @@ export const HomePage = () => {
 
 
 
-// TODO: Code which allows the category cards to become a button, navigate to 
-// relevant page: 
+
 

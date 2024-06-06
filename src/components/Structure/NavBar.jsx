@@ -9,6 +9,7 @@ import { SearchBar } from "./SearchBar";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom'; // Make sure this is imported
 import { useState } from "react";
+import booksyLogo from "../../assets/booksy.png";
 
 
 const Navbar = () => {
@@ -28,9 +29,9 @@ const Navbar = () => {
         return ( 
             <nav>
                 <div className="navbar-content">
-                    <div className="navbar-logo">
-                        <p onClick={navigateHomePage}> Booksy </p>
-                    </div>
+                <div className="navbar-logo" onClick={navigateHomePage}>
+                    <img src={booksyLogo} alt="Booksy Logo" />
+                </div>
                     <SearchBar placeholder={"Title, Author, ISBN..."}/>
                     <div className="navbar-actions">
 
