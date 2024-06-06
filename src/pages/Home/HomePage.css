@@ -1,0 +1,117 @@
+/* src/Home/HomePage.css */
+
+body {
+    background-color: white; /* Change to your desired background color */
+    margin: 0; /* Reset default body margin */
+    padding: 0; 
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Set the height to one-third of the viewport height */
+}
+
+.title h1 {
+    font-size: 2.5em; /* Adjust font size as needed */
+    font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
+    letter-spacing: .46515px;
+    font-style: italic;
+}
+
+.book-list-container {
+    overflow: hidden;
+}
+
+
+.category-grid-selection {
+    display: flex;
+    animation: carouselAnimation 15s linear infinite; /* Adjust the duration as needed */
+}
+
+.book-list-container.paused .category-grid-selection{
+    animation-play-state: paused;
+}
+
+.category-books-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.category-book-selection {
+    display: flex;
+    margin-top: 30px;
+}
+
+.show-more-button {
+    display: inline-block;
+    padding: 120px 20px;
+    font-size: 69px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(233, 179, 132);
+    background-color: rgb(255, 255, 255);
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    height: 7vh;
+}
+
+.show-more-button:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.show-more-button:active {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.bestsellers-title {
+    padding: 70px;
+    font-family: inherit;
+    font-style: italic;
+    font-family: "Guardian-EgypTT", "Charter", "Charter Bitstream", "Cambria", "Noto Serif Light", "Droid Serif", "Georgia", "serif";
+}
+
+@keyframes carouselAnimation {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+    200% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 760px) {
+    .category-grid-selection {
+        flex-direction: column;
+        animation: none;
+        align-items: center;
+    }
+
+    .category-grid-selection .book-card:nth-child(n + 7) {
+        display: none;
+      }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .category-book-selection {
+        flex-direction: column;
+    }
+
+    .bestsellers-title {
+        padding: 40px;
+        padding-bottom: 10px;
+    }
+}
